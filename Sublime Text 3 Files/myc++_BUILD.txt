@@ -1,0 +1,10 @@
+{
+  "cmd": ["g++", "$file", "-o", "$file_base_name.exe"],
+  "working_dir": "${project_path:$folder}",
+  "selector": "source.cpp",
+  "shell": true,
+  "variants": [{
+    "name": "Run",
+    "cmd": ["start", "cmd", "/k" , "$file_base_name"]
+  }]
+}
